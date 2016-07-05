@@ -21,8 +21,8 @@
   :aliases { "examples" ["run" "-m" "seesaw.test.examples.launcher"] }
 
   :dependencies [[org.clojure/clojure "1.4.0"]
-                 [com.miglayout/miglayout-core "5.0-SNAPSHOT"]
-                 [com.miglayout/miglayout-swing "5.0-SNAPSHOT"]
+                 [com.miglayout/miglayout-core "5.1-SNAPSHOT"]
+                 [com.miglayout/miglayout-swing "5.1-SNAPSHOT"]
                  [com.jgoodies/forms "1.2.1"]
                  [org.swinglabs.swingx/swingx-core "1.6.3"]
                  [j18n "1.0.2"]
