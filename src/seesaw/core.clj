@@ -1288,7 +1288,7 @@
     ; an alert when clicked.
     (button :text \"Next\"
             :mnemonic \\N
-            :listen [:action #(alert \"NEXT!\")])
+            :listen [:action #(alert % \"NEXT!\")])
 
   See:
     http://download.oracle.com/javase/6/docs/api/javax/swing/JButton.html
@@ -1833,6 +1833,8 @@
     (option-map
       action-option
       (bean-option :editable? javax.swing.JComboBox boolean)
+      (bean-option :selected-item javax.swing.JComboBox)
+      (bean-option :selected-index javax.swing.JComboBox)
       (around-option model-option to-combobox-model identity "See (seesaw.core/combobox)")
       (default-option :renderer
                       #(.setRenderer ^javax.swing.JComboBox %1 (seesaw.cells/to-cell-renderer %1 %2))
@@ -2628,7 +2630,7 @@
     (bean-option :minimum-size  java.awt.Window to-dimension nil
                  dimension-examples)
 
-    (bean-option :size java.awt.Window to-dimension nil 
+    (bean-option :size java.awt.Window to-dimension nil
                  dimension-examples)
 
     (bean-option :visible? java.awt.Window boolean)
@@ -3812,4 +3814,3 @@
   "
   [target v]
   (seesaw.value/value!* (or (to-widget target) target) v))
-
