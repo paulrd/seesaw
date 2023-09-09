@@ -24,7 +24,8 @@
                  [com.jgoodies/forms "1.3.0"]
                  [org.swinglabs.swingx/swingx-core "1.6.5-1"]
                  [j18n "1.0.2"]
-                 [com.fifesoft/rsyntaxtextarea "3.6.0"]]
+                 [com.fifesoft/rsyntaxtextarea "3.6.0"]
+                 [cc.riddy/proxy-plus-minus "1.0.0-SNAPSHOT"]]
   :profiles {:dev {:dependencies [[io.github.noahtheduke/lazytest "1.9.1"]
                                   [lein-autodoc "0.9.0"]]}}
   :plugins [[com.github.liquidz/antq "RELEASE"]]
