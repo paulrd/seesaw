@@ -1,0 +1,1 @@
+{:lint-as {cc.riddy.proxy-plus-minus/dofor-indexed clojure.core/let, cc.riddy.proxy-plus-minus/dofor clojure.core/for, cc.riddy.proxy-plus-minus/proxy-super+- clojure.core/proxy-super}}
