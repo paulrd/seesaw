@@ -19,18 +19,18 @@
   :aliases {"test" ["run" "-m" "lazytest.main"]
             "examples" ["run" "-m" "seesaw.test.examples.launcher"]}
 
-  :dependencies [[org.clojure/clojure "1.11.1"]
+  :dependencies [[org.clojure/clojure "1.12.3"]
                  [com.miglayout/miglayout "3.7.4"]
-                 [com.jgoodies/forms "1.2.1"]
-                 [org.swinglabs.swingx/swingx-core "1.6.3"]
+                 [com.jgoodies/forms "1.3.0"]
+                 [org.swinglabs.swingx/swingx-core "1.6.5-1"]
                  [j18n "1.0.2"]
-                 [com.fifesoft/rsyntaxtextarea "2.5.6"]]
-  :profiles {:dev {:dependencies [[io.github.noahtheduke/lazytest "1.2.0"]
+                 [com.fifesoft/rsyntaxtextarea "3.6.0"]]
+  :profiles {:dev {:dependencies [[io.github.noahtheduke/lazytest "1.9.1"]
                                   [lein-autodoc "0.9.0"]]}}
+  :plugins [[com.github.liquidz/antq "RELEASE"]]
   :repositories [["stuartsierra-releases" "https://stuartsierra.com/maven2"]]
   :autodoc {
     :name "Seesaw",
     :page-title "Seesaw API Documentation"
     :copyright "Copyright 2012, Dave Ray" }
   :java-source-paths ["jvm"])
-
