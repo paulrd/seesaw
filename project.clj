@@ -20,7 +20,7 @@
             "examples" ["run" "-m" "seesaw.test.examples.launcher"]}
 
   :dependencies [[org.clojure/clojure "1.12.3"]
-                 [com.miglayout/miglayout "3.7.4"]
+                 [com.miglayout/miglayout-swing "11.4.2"]
                  [com.jgoodies/jgoodies-forms "1.8.0"]
                  [org.swinglabs.swingx/swingx-core "1.6.5-1"]
                  [j18n "1.0.2"]
