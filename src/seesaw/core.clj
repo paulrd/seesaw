@@ -1905,9 +1905,9 @@
   [v & {:keys [from to by]}]
   (cond
     ; TODO Reflection here. Don't know how to get rid of it.
-    (number? v) 
-    (let [step (or by 1)] 
-      (javax.swing.SpinnerNumberModel. ^Number v ^Comparable from ^Comparable to 
+    (number? v)
+    (let [step (or by 1)]
+      (javax.swing.SpinnerNumberModel. ^Number v ^Comparable from ^Comparable to
                                        ^Number step))
     (instance? java.util.Date v)
       (javax.swing.SpinnerDateModel. ^java.util.Date v
@@ -2889,7 +2889,6 @@
   (cond
     (nil? w) w
     (instance? java.awt.Window w) w
-    (instance? java.applet.Applet w) w
     (instance? javax.swing.JPopupMenu w)
       (let [^javax.swing.JPopupMenu w w]
       (if-let [p (.getParent w)]
