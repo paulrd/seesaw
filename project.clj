@@ -19,8 +19,9 @@
   :aliases {"test" ["run" "-m" "lazytest.main"]
             "examples" ["run" "-m" "seesaw.test.examples.launcher"]}
 
-  :dependencies [[org.clojure/clojure "1.12.3"]
+  :dependencies [[org.clojure/clojure "1.12.4"]
                  [com.miglayout/miglayout-swing "11.4.2"]
+                 [com.formdev/flatlaf "3.7"]
                  [com.jgoodies/jgoodies-forms "1.8.0"]
                  [org.swinglabs.swingx/swingx-core "1.6.5-1"]
                  [j18n "1.0.2"]
@@ -30,8 +31,7 @@
                                   [lein-autodoc "0.9.0"]]}}
   :plugins [[com.github.liquidz/antq "RELEASE"]]
   :repositories [["stuartsierra-releases" "https://stuartsierra.com/maven2"]]
-  :autodoc {
-    :name "Seesaw",
-    :page-title "Seesaw API Documentation"
-    :copyright "Copyright 2012, Dave Ray" }
+  :autodoc {:name "Seesaw",
+            :page-title "Seesaw API Documentation"
+            :copyright "Copyright 2012, Dave Ray"}
   :java-source-paths ["jvm"])

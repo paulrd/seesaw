@@ -15,7 +15,9 @@
    [seesaw.dev :as dev]
    [seesaw.keymap :refer [map-key]]
    [seesaw.swingx :refer [hl-color hl-simple-striping listbox-x]]
-   [seesaw.test.examples.example :refer [defexample]]))
+   [seesaw.test.examples.example :refer [defexample]])
+  (:import
+   [com.formdev.flatlaf FlatLightLaf]))
 
 ; A simple launcher for all the examples.
 
@@ -108,8 +110,8 @@
 
 (defexample run []
   (dev/debug!)
+  (FlatLightLaf/setup)
   (-> (make-frame)
-    add-behaviors))
+      add-behaviors))
 
 ;(run :dispose)
-
